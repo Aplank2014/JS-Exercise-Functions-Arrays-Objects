@@ -252,13 +252,12 @@ function getCarInfoByIndex(inventory, index) {
  * it will return `This is a Lincoln Town Car`.
 */
 function getLastCarInfo(inventory) {
-  for (let i = 0; inventory.length < 1000000; i++){
     const val = inventory[inventory.length - 1];
     const message = `This is a ${val.car_make} ${val.car_model}`;
     return message;
   }
  
-}
+
  
 /**
  * ### Challenge `getModelYears`
@@ -277,7 +276,6 @@ function getModelYears(inventory) {
     continue
   }
   return years;
-  /* code here */
 }
 
 /**
